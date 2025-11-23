@@ -1,7 +1,7 @@
 # NOTEPAD
 Notepad è una mini applicazione che permette di creare, modificare ed eliminare note personalizzate. Le note che vengono salvate sono visualizzabili in una lista.
 
-- Tecnologie e strumenti utilizzati
+## Tecnologie e strumenti utilizzati
 - Creazione di diversi componenti che interagiscono tra loro
 - Creazione di un service che gestisce la logica dei dati
 - Utilizzo di direttive strutturali Angular come ngIf, ngFor
