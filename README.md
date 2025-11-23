@@ -1,3 +1,22 @@
+# NOTEPAD
+Notepad è una mini applicazione che permette di creare, modificare ed eliminare note personalizzate. Le note che vengono salvate sono visualizzabili in una lista.
+
+- Tecnologie e strumenti utilizzati
+- Creazione di diversi componenti che interagiscono tra loro
+- Creazione di un service che gestisce la logica dei dati
+- Utilizzo di direttive strutturali Angular come ngIf, ngFor
+- Utilizzo di property binding e direttiva Angular Forms NgModule
+- Routing per la creazione di una nota e lista delle note
+- Integrazione ed utilizzo di ToastrModule
+- Per lo stile, utilizzato Angular Material.
+
+
+# Deployment
+bestmovies-marco-caiazza.vercel.app
+
+
+
+
 # AppNote
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.19.
