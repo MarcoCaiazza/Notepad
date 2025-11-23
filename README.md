@@ -12,7 +12,7 @@ Notepad è una mini applicazione che permette di creare, modificare ed eliminare
 
 
 # Deployment
-bestmovies-marco-caiazza.vercel.app
+notepad-flax-six.vercel.app
 
 
 
