@@ -1,0 +1,22 @@
+<div class="container">
+<div>
+    <h3 *ngIf="notes.length === 0">Le note vengono salvate qui</h3>
+</div>
+<div>
+    <ul *ngIf="notes">
+        <li *ngFor="let note of notes">
+            <h1>{{note.titolo}}</h1>
+            <p>{{note.contenuto}}</p>
+            <div class="data">
+                <span>Nota creata il:</span>
+                <p>{{note.data}}</p>
+            </div>
+            <div class="btn">
+                <button class="btn-hover" mat-fab extended routerLink="/notes/{{note.id}}/edit">Modifica</button>
+                <button class="btn-hover" mat-fab extended (click)="deleteNota(note.id)">Elimina</button>
+            </div>
+        </li>    
+    </ul>
+</div>
+    
+</div>

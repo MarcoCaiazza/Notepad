@@ -1,0 +1,56 @@
+.container {
+    width: 800px;
+    padding: 10px;
+    }
+    
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    li:hover {
+    border: solid 2px rgb(247, 245, 243) !important;
+    transition: 0.3s;
+}
+    
+    li {
+        padding: 30px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        border: solid 2px;
+        border-radius: 20px;
+        height: 130px;
+    }
+    
+    li h1 {
+        margin: 0 0 5px 0;
+}
+
+li p {
+    margin: 0 0 5px 0;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.data {
+    align-self: flex-end;
+    font-size: small;
+    margin: 5px 0;
+}
+
+.btn {
+ display: flex;
+ justify-content: space-evenly;
+ /* padding: 5px; */
+ /* margin-top: 10px; */
+}
+
+button {
+    width: 70px;
+    height: 40px;
+    background-color: var(--colore-primario);
+}

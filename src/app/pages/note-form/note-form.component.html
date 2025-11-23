@@ -1,0 +1,23 @@
+
+<!-- * utilizzo "direttiva Attribuita" ngForm (Direttiva:modifica l'aspetto di un elelmento DOM) -->
+<form action="" class="container" #myForm="ngForm" (ngSubmit)="onSubmit(myForm)"> 
+  <h3 *ngIf="isEdit">Modifica la nota selezionata</h3>
+  <h3 *ngIf="!isEdit">Crea una nota</h3>
+
+<mat-form-field>
+  <mat-label>Titolo</mat-label>
+  <!-- // utilizzo "direttiva Attribuita" ngModel -->
+  <input matInput required [(ngModel)]="titolo" name="titolo" #titoloValidation="ngModel">
+  <!-- // assegno classe -mat error- e uso "direttiva strutturale" per condizioni -->
+  <mat-error *ngIf="titoloValidation.invalid && titoloValidation.touched">*Campo obbligatorio</mat-error> 
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Scrivi la tua nota...</mat-label>
+  <textarea matInput rows="4" required [(ngModel)]="contenuto" name="contenuto" #contenutoValidation="ngModel"></textarea>
+  <mat-error *ngIf="contenutoValidation.invalid && contenutoValidation.touched">*Campo obbligatorio</mat-error>
+</mat-form-field>
+<div class="containerBtn">
+    <button class="btn-hover" type="submit" mat-fab extended>Salva</button>
+</div>
+
+</form>
